@@ -16,7 +16,7 @@ class TestOne(BaseClass):
     def test_e2e(self):
         log = self.getLogger()
         homePage = HomePage(self.driver)
-        checkoutpage = homePage.shopItems()
+        checkoutpage = homePage.shopItems()  # it creates the HomePage at the method level in shopitems
         log.info("getting all the card titles")
         cards = checkoutpage.getCardTitles()
         i = -1
@@ -27,7 +27,7 @@ class TestOne(BaseClass):
             if cardText == "Blackberry":
                 checkoutpage.getCardFooter()[i].click()
 
-        self.driver.find_element_by_css_selector("a[class*='btn-primary']").click()
+        checkoutpage.firstCheckout().click()
 
         confirmpage = checkoutpage.checkOutItems()
         log.info("Entering country name as ind")

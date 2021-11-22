@@ -12,6 +12,7 @@ class CheckOutPage:
     # driver.find_element_by_xpath("//button[@class='btn btn-success']")
     cardTitle = (By.CSS_SELECTOR, ".card-title a")
     cardFooter = (By.CSS_SELECTOR, ".card-footer button")
+    firstCheckoutButton = (By.CSS_SELECTOR, "a[class*='btn-primary']")
     checkOut = (By.XPATH, "//button[@class='btn btn-success']")
 
     def getCardTitles(self):
@@ -19,6 +20,9 @@ class CheckOutPage:
 
     def getCardFooter(self):
         return self.driver.find_elements(*CheckOutPage.cardFooter)
+
+    def firstCheckout(self):
+        return self.driver.find_element(*CheckOutPage.firstCheckoutButton)
 
     def checkOutItems(self):
         self.driver.find_element(*CheckOutPage.checkOut).click()
