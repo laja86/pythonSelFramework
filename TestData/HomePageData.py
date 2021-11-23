@@ -5,6 +5,8 @@ class HomePageData:
 
     test_HomePage_data = [{"firstname":"Rahul","lastname":"shetty","gender":"Male"}, {"firstname":"Anshika", "lastname":"shetty", "gender":"Female"}]
 
+    # SELF parameter not present, because the method is declared as static. This is to avoid creating objects to call this object
+    # self parameter is only require for non-static methods
     @staticmethod
     def getTestData(test_case_name):
         Dict = {}
@@ -14,7 +16,6 @@ class HomePageData:
             if sheet.cell(row=i, column=1).value == test_case_name:
 
                 for j in range(2, sheet.max_column + 1):  # to get columns
-                    # Dict["lastname"]="shetty
                     Dict[sheet.cell(row=1, column=j).value] = sheet.cell(row=i, column=j).value
-        return[Dict]
+        return[Dict]  # will be sent in a list
 
