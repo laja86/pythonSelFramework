@@ -12,16 +12,16 @@ class ConfirmPage(BasePage):
     txa_alertsucess = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
 
     def getCountry(self):
-        return self.driver.find_element(*ConfirmPage.tb_country)
+        return self.driver.find_element(*self.tb_country)
 
     def get_Suggestions(self):
-        return self.driver.find_elements(*ConfirmPage.list_suggestions) # cambiar todos a self
+        return self.driver.find_elements(*self.list_suggestions) # uses * to deserialize the tuple
 
     def getCheckboxAgreeWith(self):
-        return self.driver.find_element(*ConfirmPage.chk_AgreeWith)
+        return self.driver.find_element(*self.chk_AgreeWith)
 
     def getpurchasebutton(self):
-        return self.driver.find_element(*ConfirmPage.btn_purchase)
+        return self.driver.find_element(*self.btn_purchase)
 
     def get_txa_alertsucess(self):
-        return self.driver.find_element(*ConfirmPage.txa_alertsucess)
+        return self.driver.find_element(*self.txa_alertsucess)

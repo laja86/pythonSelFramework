@@ -322,3 +322,61 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2021-11-25 17:14:49,493 :INFO : test_e2e :Hungary
 2021-11-25 17:14:49,751 :INFO : test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-11-25 17:35:58,383 :INFO : test_e2e :getting all the card titles
+2021-11-25 17:35:58,421 :INFO : test_e2e :iphone X
+2021-11-25 17:35:58,439 :INFO : test_e2e :Samsung Note 8
+2021-11-25 17:35:58,456 :INFO : test_e2e :Nokia Edge
+2021-11-25 17:35:58,480 :INFO : test_e2e :Blackberry
+2021-11-25 17:35:58,904 :INFO : test_e2e :Entering country name as arm
+2021-11-25 17:37:13,736 :INFO : test_e2e :getting all the card titles
+2021-11-25 17:37:13,785 :INFO : test_e2e :iphone X
+2021-11-25 17:37:13,820 :INFO : test_e2e :Samsung Note 8
+2021-11-25 17:37:13,840 :INFO : test_e2e :Nokia Edge
+2021-11-25 17:37:13,862 :INFO : test_e2e :Blackberry
+2021-11-25 17:37:14,231 :INFO : test_e2e :Entering country name as arm
+2021-11-25 17:37:19,609 :INFO : test_e2e :Armenia
+2021-11-25 17:37:19,631 :INFO : test_e2e :Belarus
+2021-11-25 17:37:19,650 :INFO : test_e2e :Bulgaria
+2021-11-25 17:37:19,671 :INFO : test_e2e :Denmark
+2021-11-25 17:37:19,689 :INFO : test_e2e :Hungary
+2021-11-25 17:37:20,096 :INFO : test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-11-25 17:41:58,829 :INFO : test_e2e :getting all the card titles
+2021-11-25 17:41:58,884 :INFO : test_e2e :iphone X
+2021-11-25 17:41:58,910 :INFO : test_e2e :Samsung Note 8
+2021-11-25 17:41:58,932 :INFO : test_e2e :Nokia Edge
+2021-11-25 17:41:58,959 :INFO : test_e2e :Blackberry
+2021-11-25 17:41:59,386 :INFO : test_e2e :Entering country name as arm
+2021-11-25 17:42:04,878 :INFO : test_e2e :Armenia
+2021-11-25 17:42:04,908 :INFO : test_e2e :Belarus
+2021-11-25 17:42:04,927 :INFO : test_e2e :Bulgaria
+2021-11-25 17:42:04,953 :INFO : test_e2e :Denmark
+2021-11-25 17:42:04,972 :INFO : test_e2e :Hungary
+2021-11-25 17:42:05,290 :INFO : test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-11-25 17:44:00,069 :INFO : test_e2e :getting all the card titles
+2021-11-25 17:44:00,113 :INFO : test_e2e :iphone X
+2021-11-25 17:44:00,130 :INFO : test_e2e :Samsung Note 8
+2021-11-25 17:44:00,150 :INFO : test_e2e :Nokia Edge
+2021-11-25 17:44:00,204 :INFO : test_e2e :Blackberry
+2021-11-25 17:44:00,622 :INFO : test_e2e :Entering country name as arm
+2021-11-25 17:44:05,973 :INFO : test_e2e :Armenia
+2021-11-25 17:44:05,990 :INFO : test_e2e :Belarus
+2021-11-25 17:44:06,009 :INFO : test_e2e :Bulgaria
+2021-11-25 17:44:06,030 :INFO : test_e2e :Denmark
+2021-11-25 17:44:06,051 :INFO : test_e2e :Hungary
+2021-11-25 17:44:06,342 :INFO : test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-11-25 17:52:17,629 :INFO : test_e2e :getting all the card titles
+2021-11-25 17:52:17,675 :INFO : test_e2e :iphone X
+2021-11-25 17:52:17,698 :INFO : test_e2e :Samsung Note 8
+2021-11-25 17:52:17,724 :INFO : test_e2e :Nokia Edge
+2021-11-25 17:52:17,751 :INFO : test_e2e :Blackberry
+2021-11-25 17:52:18,316 :INFO : test_e2e :Entering country name as arm
+2021-11-25 17:52:23,798 :INFO : test_e2e :Armenia
+2021-11-25 17:52:23,824 :INFO : test_e2e :Belarus
+2021-11-25 17:52:23,845 :INFO : test_e2e :Bulgaria
+2021-11-25 17:52:23,868 :INFO : test_e2e :Denmark
+2021-11-25 17:52:23,888 :INFO : test_e2e :Hungary
+2021-11-25 17:52:24,191 :INFO : test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).

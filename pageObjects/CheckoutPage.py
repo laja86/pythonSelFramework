@@ -14,15 +14,15 @@ class CheckOutPage(BasePage):
     checkOut = (By.XPATH, "//button[@class='btn btn-success']")
 
     def getCardTitles(self):
-        return self.driver.find_elements(*CheckOutPage.cardTitle)
+        return self.driver.find_elements(*self.cardTitle)
 
     def getCardFooter(self):
-        return self.driver.find_elements(*CheckOutPage.cardFooter)
+        return self.driver.find_elements(*self.cardFooter)
 
     def firstCheckout(self):
-        return self.driver.find_element(*CheckOutPage.firstCheckoutButton)
+        return self.driver.find_element(*self.firstCheckoutButton)
 
     def checkOutItems(self):
-        self.driver.find_element(*CheckOutPage.checkOut).click()
+        self.driver.find_element(*self.checkOut).click()
         confirmPage = ConfirmPage(self.driver)
         return confirmPage
