@@ -1,12 +1,10 @@
 from selenium.webdriver.common.by import By
 
+from pageObjects.BasePage import BasePage
 from pageObjects.ConfirmPage import ConfirmPage
 
 
-class CheckOutPage:
-
-    def __init__(self, driver):
-        self.driver = driver
+class CheckOutPage(BasePage):
 
     # driver.find_elements_by_css_selector(".card-title a")
     # driver.find_element_by_xpath("//button[@class='btn btn-success']")

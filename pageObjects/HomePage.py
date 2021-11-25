@@ -1,12 +1,10 @@
 from selenium.webdriver.common.by import By
 
+from pageObjects.BasePage import BasePage
 from pageObjects.CheckoutPage import CheckOutPage
 
 
-class HomePage:
-
-    def __init__(self, driver):  # constructor mandatory to import the driver
-        self.driver = driver
+class HomePage(BasePage):
 
     shop = (By.CSS_SELECTOR, "a[href*='shop']")  # all elements are defined as tuples
     name = (By.CSS_SELECTOR, "[name='name']")

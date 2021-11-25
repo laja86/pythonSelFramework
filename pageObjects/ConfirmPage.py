@@ -1,13 +1,12 @@
 from selenium.webdriver.common.by import By
 
+from pageObjects.BasePage import BasePage
 
-class ConfirmPage:
 
-    def __init__(self, driver):
-        self.driver = driver
+class ConfirmPage(BasePage):
 
     tb_country = (By.CSS_SELECTOR, "#country")
-    suggestions = (By.LINK_TEXT, "Armenia")
+    list_suggestions = (By.CSS_SELECTOR, ".suggestions a")
     chk_AgreeWith = (By.CSS_SELECTOR, ".checkbox.checkbox-primary")
     btn_purchase = (By.CSS_SELECTOR, "input[type='submit']")
     txa_alertsucess = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
@@ -15,8 +14,8 @@ class ConfirmPage:
     def getCountry(self):
         return self.driver.find_element(*ConfirmPage.tb_country)
 
-    def getSuggestions(self):
-        return self.driver.find_element(*ConfirmPage.suggestions)
+    def get_Suggestions(self):
+        return self.driver.find_elements(*ConfirmPage.list_suggestions) # cambiar todos a self
 
     def getCheckboxAgreeWith(self):
         return self.driver.find_element(*ConfirmPage.chk_AgreeWith)

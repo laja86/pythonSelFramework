@@ -30,11 +30,23 @@ class TestOne(BaseClass):
         checkoutpage.firstCheckout().click()
 
         confirmpage = checkoutpage.checkOutItems()
-        log.info("Entering country name as ind")
-        confirmpage.getCountry().send_keys("arm")
+        log.info("Entering country name as arm")
+        confirmpage.getCountry().send_keys("ar")
 
-        self.verifyLinkPresence("Armenia")
-        confirmpage.getSuggestions().click()
+        countryToFind = "Hungary"
+        self.verifyLinkPresence(countryToFind)
+
+        listsuggestions = confirmpage.get_Suggestions()
+
+        j = -1
+        for sug in listsuggestions:
+            j = j + 1
+            suggestion = sug.text
+            log.info(suggestion)
+            if suggestion == countryToFind:
+                confirmpage.get_Suggestions()[j].click()
+                break
+
         confirmpage.getCheckboxAgreeWith().click()
 
         confirmpage.getpurchasebutton().click()
