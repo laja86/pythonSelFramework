@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
 
 driver = None
@@ -16,7 +17,14 @@ def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
-        driver = webdriver.Chrome(executable_path="C:\\Users\luis.juarez\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pytest_orion\libs\chromedriver.exe")
+        options = Options()
+        options.add_argument("--headless")
+        # options.add_argument("--disable-dev-shm-usage")
+        # options.add_argument("--no-sandbox")
+        # options.add_argument("--disable-gpu")
+        # options.add_argument("--disable-extensions")
+        # options.add_argument("--start-maximized")
+        driver = webdriver.Chrome(chrome_options=options, executable_path="C:\\chromedriver.exe")
     elif browser_name == "firefox":
         driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
     elif browser_name == "IE":
@@ -42,15 +50,15 @@ def pytest_runtest_makereport(item):
 
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
-        if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = report.nodeid.replace("::", "_") + ".png"
-            _capture_screenshot(file_name)
-            if file_name:
-                html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
-                extra.append(pytest_html.extras.html(html))
+#        if (report.skipped and xfail) or (report.failed and not xfail):
+#            file_name = report.nodeid.replace("::", "_") + ".png"
+#            _capture_screenshot(file_name)
+#            if file_name:
+#                html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
+#                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
+#                extra.append(pytest_html.extras.html(html))
         report.extra = extra
 
 
-def _capture_screenshot(name):
-    driver.get_screenshot_as_file(name)
+# def _capture_screenshot(name):
+#    driver.get_screenshot_as_file(name)
